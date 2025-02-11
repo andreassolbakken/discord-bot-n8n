@@ -35,6 +35,7 @@ client.on("messageCreate", async (message) => {
 });
 
 // Start bot
+console.log("Loaded Token:", `"${process.env.DISCORD_TOKEN}"`);
 client.login(process.env.DISCORD_TOKEN);
 
 

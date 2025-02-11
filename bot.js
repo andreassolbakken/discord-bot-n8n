@@ -36,6 +36,15 @@ client.on("messageCreate", async (message) => {
 
 // Start bot
 console.log("Loaded Token:", `"${process.env.DISCORD_TOKEN}"`);
+// Debugging: Print the token before login
+console.log("🔍 Loaded Token:", `"${process.env.DISCORD_TOKEN}"`);
+console.log("📏 Token Length:", process.env.DISCORD_TOKEN ? process.env.DISCORD_TOKEN.length : "Token not found");
+
+// Debugging: Print the token before login
+console.log("🔍 Loaded Token:", `"${process.env.DISCORD_TOKEN}"`);
+console.log("📏 Token Length:", process.env.DISCORD_TOKEN ? process.env.DISCORD_TOKEN.length : "Token not found");
+
+// Start bot
 client.login(process.env.DISCORD_TOKEN);
 
 
